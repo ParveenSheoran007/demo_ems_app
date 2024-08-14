@@ -1,4 +1,4 @@
-import 'package:auth_demo/setting/ui/upgreadPlan/plan_card.dart';
+import 'package:demo_ems_app/setting/ui/upgreadPlan/plan_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

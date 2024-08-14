@@ -1,4 +1,4 @@
-import 'package:auth_demo/core/color_string.dart';
+import 'package:demo_ems_app/core/color_string.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'select_payment_method_screen.dart'; // Import your screen here

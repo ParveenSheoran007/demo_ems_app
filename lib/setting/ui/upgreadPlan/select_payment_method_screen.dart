@@ -1,6 +1,7 @@
-import 'package:auth_demo/core/color_string.dart';
-import 'package:auth_demo/setting/ui/upgreadPlan/payment_option.dart';
-import 'package:auth_demo/setting/ui/upgreadPlan/review_summary_screen.dart';
+import 'package:demo_ems_app/core/color_string.dart';
+import 'package:demo_ems_app/setting/ui/upgreadPlan/payment_option.dart';
+import 'package:demo_ems_app/setting/ui/upgreadPlan/review_summary_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

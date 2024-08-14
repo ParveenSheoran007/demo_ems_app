@@ -1,5 +1,5 @@
-import 'package:auth_demo/EmployeeScreen/ui/add_employees_department_screen.dart';
-import 'package:auth_demo/core/color_string.dart';
+import 'package:demo_ems_app/core/color_string.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -56,11 +56,7 @@ class _WorkPatternScreenState extends State<WorkPatternScreen> {
             SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => AddEmployeesDepartmentScreen()),
-                );
+
               },
               icon: Icon(
                 Icons.add,
@@ -90,11 +86,7 @@ class _WorkPatternScreenState extends State<WorkPatternScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => AddEmployeesDepartmentScreen()),
-          );
+
         },
         child: Icon(
           Icons.add,

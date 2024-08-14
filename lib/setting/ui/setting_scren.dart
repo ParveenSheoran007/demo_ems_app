@@ -1,7 +1,8 @@
-import 'package:auth_demo/core/color_string.dart';
-import 'package:auth_demo/setting/ui/CompanyProfile/company_profile_screen.dart';
-import 'package:auth_demo/setting/ui/upgreadPlan/upgrade_plan_screen.dart';
-import 'package:auth_demo/setting/ui/work_pattern/work_pattern_screen.dart';
+
+import 'package:demo_ems_app/core/color_string.dart';
+import 'package:demo_ems_app/setting/ui/CompanyProfile/company_profile_screen.dart';
+import 'package:demo_ems_app/setting/ui/upgreadPlan/upgrade_plan_screen.dart';
+import 'package:demo_ems_app/setting/ui/work_pattern/work_pattern_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

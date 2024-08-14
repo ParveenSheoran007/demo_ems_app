@@ -1,7 +1,9 @@
+import 'package:demo_ems_app/setting/ui/upgreadPlan/feature_list_tile.dart';
+import 'package:demo_ems_app/setting/ui/upgreadPlan/upgrade_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:auth_demo/setting/ui/upgreadPlan/feature_list_tile.dart';
-import 'package:auth_demo/setting/ui/upgreadPlan/upgrade_confirmation_screen.dart'; // Import the UpgradeConfirmationScreen
+import 'package:demo_ems_app/core/color_string.dart';
+// Import the UpgradeConfirmationScreen
 
 class ReviewSummaryScreen extends StatelessWidget {
   final String paymentMethod;
