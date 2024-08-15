@@ -1,5 +1,5 @@
-import 'package:demo_ems_app/setting/ui/work_pattern/add_work_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:demo_ems_app/setting/ui/work_pattern/add_work_screen.dart';
 
 class WorkPattern extends StatefulWidget {
   const WorkPattern({super.key});
@@ -16,7 +16,6 @@ class _WorkPatternState extends State<WorkPattern> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            // Handle back navigation
             Navigator.of(context).pop();
           },
         ),
@@ -44,9 +43,45 @@ class _WorkPatternState extends State<WorkPattern> {
                   fontSize: 20,
                 ),
               ),
-              trailing: Icon(Icons.more_vert),
-              onTap: () {
-              },
+              trailing: PopupMenuButton<int>(
+                icon: Icon(Icons.more_vert),
+                onSelected: (value) {
+                  if (value == 1) {
+                    // Edit Work Pattern
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AddWorkScreen()),
+                    );
+                  } else if (value == 2) {
+                  }
+                },
+                itemBuilder: (context) => [
+                  PopupMenuItem(
+                    value: 1,
+                    child: Row(
+                      children: [
+                        Icon(Icons.edit, color: Colors.black),
+                        SizedBox(width: 8),
+                        Text("Edit Work Pattern"),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    value: 2,
+                    child: Row(
+                      children: [
+                        Icon(Icons.delete, color: Colors.red),
+                        SizedBox(width: 8),
+                        Text(
+                          "Remove Work Pattern",
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
@@ -55,8 +90,7 @@ class _WorkPatternState extends State<WorkPattern> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-                builder: (context) => AddWorkScreen()),
+            MaterialPageRoute(builder: (context) => AddWorkScreen()),
           );
         },
         backgroundColor: Color(0xFF5C6AC4),

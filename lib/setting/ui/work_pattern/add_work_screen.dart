@@ -61,18 +61,50 @@ class _AddWorkScreenState extends State<AddWorkScreen> {
                 fontSize: 20,
               ),
             ),
-            trailing: Icon(Icons.more_vert),
+            trailing: PopupMenuButton<int>(
+              color: Colors.white12,
+              icon: Icon(Icons.more_vert),
+              onSelected: (value) {
+                if (value == 1) {
+                  // Handle edit action
+                } else if (value == 2) {
+                }
+              },
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: 1,
+                  child: Row(
+                    children: [
+                      Icon(Icons.edit, color: Colors.black),
+                      SizedBox(width: 8),
+                      Text("Edit Work Pattern"),
+                    ],
+                  ),
+                ),
+                PopupMenuItem(
+                  value: 2,
+                  child: Row(
+                    children: [
+                      Icon(Icons.delete, color: Colors.red),
+                      SizedBox(width: 8),
+                      Text(
+                        "Remove Work Pattern",
+                        style: TextStyle(color: Colors.red),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
             onTap: () {
-              // Handle list item tap
             },
           );
         },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Handle FAB action
         },
-        backgroundColor: Color(0xFF5C6AC4), // Matches the color from the previous design
+        backgroundColor: Color(0xFF6C60FF),
         child: Icon(Icons.add),
       ),
     );
