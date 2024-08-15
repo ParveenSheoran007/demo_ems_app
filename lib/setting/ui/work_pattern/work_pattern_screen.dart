@@ -1,4 +1,5 @@
 import 'package:demo_ems_app/core/color_string.dart';
+import 'package:demo_ems_app/setting/ui/work_pattern/add_work_pattern.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -56,8 +57,11 @@ class _WorkPatternScreenState extends State<WorkPatternScreen> {
             SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
-
-              },
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AddWorkPatternScreen()),
+                );              },
               icon: Icon(
                 Icons.add,
                 color: Colors.white,
